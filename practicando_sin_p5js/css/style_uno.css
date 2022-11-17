@@ -1,0 +1,14 @@
+body
+  {
+    background-color: #AAAAFF;
+    /* background-color es el atributo que cambia el color de fondo de tu pagina */
+    color: white;
+    /* Color es el atributo que cambia el color del texto de tu pagina */
+    font-family: Helvetica;
+    /* font-family es el atributo que cambia la fuente de tu pagina */
+  }
+  strong
+  {
+    background-color: #FFAAAA;
+    /* Para ver el codigo hexagecimal del color que deseas escribe en google: #ffffff */
+  }
