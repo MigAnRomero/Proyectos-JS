@@ -32,9 +32,14 @@
   	    var g_urano = 8.7;
  	    var g_neptuno = 11.15;
   	    var g_pluton = 0.62;
-        pesoenjupiter = g_jupiter * peso / g_tierra
-        pesoenjupiter = parseInt(pesoenjupiter);
-        document.write("tu peso en jupiter es " + pesoenjupiter);
+        // peso en Jupiter
+        peso_en_jupiter = g_jupiter * peso / g_tierra
+        peso_en_jupiter = parseInt(peso_en_jupiter);
+        // peso en Mercurio
+        peso_en_mercurio = g_mercurio * peso / g_tierra
+        peso_en_mercurio = parseInt(peso_en_mercurio);
+        document.write("tu peso en jupiter es " + peso_en_jupiter + "\n");
+        document.write("tu peso en mercurio es " + peso_en_mercurio);
         // ensayo y error
     </script>
   </body>
