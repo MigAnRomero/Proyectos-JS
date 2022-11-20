@@ -20,27 +20,45 @@
     <h1>Descrube tu peso en otros planetas que no son la tierra</h1>
     <p>Para eso no tienes que indicar <strong> tu peso</strong></p>
     <script type="text/javascript">
-        alert("Nos tienes que dar tu peso");
- 		var peso = prompt("Dinos tu peso actual")
-        // planetas a trabajar: todos los del sistema solar
+      alert("Nos tienes que dar tu peso");
+ 		  var peso = prompt("Dinos tu peso actual")
+      // planetas a trabajar: todos los del sistema solar
   		var g_mercurio = 3.7;
-  	    var g_venus = 8.87;
-		var g_tierra = 9.8;
-  	    var g_marte = 3.711;
-  	    var g_jupiter = 28.4;
+  	  var g_venus = 8.87;
+		  var g_tierra = 9.8;
+  	  var g_marte = 3.711;
+  	  var g_jupiter = 28.4;
  	    var g_saturno = 10.44;
-  	    var g_urano = 8.7;
+  	  var g_urano = 8.7;
  	    var g_neptuno = 11.15;
-  	    var g_pluton = 0.62;
-        // peso en Jupiter
-        peso_en_jupiter = g_jupiter * peso / g_tierra
-        peso_en_jupiter = parseInt(peso_en_jupiter);
-        // peso en Mercurio
-        peso_en_mercurio = g_mercurio * peso / g_tierra
-        peso_en_mercurio = parseInt(peso_en_mercurio);
-        document.write("tu peso en jupiter es " + peso_en_jupiter + "\n");
-        document.write("tu peso en mercurio es " + peso_en_mercurio);
-        // ensayo y error
+  	  var g_pluton = 0.62;
+      // peso en Jupiter
+      peso_en_jupiter = g_jupiter * peso / g_tierra
+      peso_en_jupiter = parseInt(peso_en_jupiter);
+      // peso en Mercurio
+      peso_en_mercurio = g_mercurio * peso / g_tierra
+      peso_en_mercurio = parseInt(peso_en_mercurio);
+      // peso en Venus
+      peso_en_venus = g_venus * peso / g_tierra
+      peso_en_venus = parseInt(peso_en_venus);
+      // peso en Marte
+      peso_en_marte = g_marte * peso / g_tierra
+      peso_en_marte = parseInt(peso_en_marte);
+      // peso en Saturno
+      peso_en_saturno = g_saturno * peso / g_tierra
+      peso_en_saturno = parseInt(peso_en_saturno);
+      // peso en Urano
+      peso_en_urano = g_urano * peso / g_tierra
+      peso_en_urano = parseInt(peso_en_urano);
+      // peso en Neptuno
+      peso_en_neptuno = g_neptuno * peso / g_tierra
+      peso_en_neptuno = parseInt(peso_en_neptuno);
+      // peso en Pluton
+      peso_en_pluton = g_pluton * peso / g_tierra
+      peso_en_pluton = parseInt(peso_en_pluton);
+      document.write("tu peso en jupiter es " + peso_en_jupiter + "\n");
+      document.write("tu peso en mercurio es " + peso_en_mercurio);
+      // ensayo y error
     </script>
   </body>
 </html>
