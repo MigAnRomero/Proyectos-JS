@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcular la masa de una persona en otro planeta</title>
+    <style type="text/css">
+      body
+      {
+          background-color: green;
+          color: white;
+          font-family: Helvetica;
+      }
+      strong
+      {
+          color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descrube tu masa en otros planetas que no son la tierra</h1>
+    <p>Para eso no tienes que indicar <strong> tu masa</strong></p>
+    <script type="text/javascript">
+        let masa = prompt("¿Cuál es la masa de la persona?");
+        let astro = parseInt(prompt("Elige tu astro. \n1. Mercurio. 2. Venus. 3. Luna. " +
+        "4. Tierra. 5. Marte.\n6. Jupiter. 7. Saturno. 8. Urano. 9. Neptuno. 10. Plutón."));
+        // planetas a trabajar: todos los del sistema solar
+        let g_mercurio = 3.7;
+        let g_venus = 8.87;
+        let g_luna = 1.62
+        let g_tierra = 9.8;
+        let g_marte = 3.711;
+        let g_jupiter = 28.4;
+        let g_saturno = 10.44;
+        let g_urano = 8.7;
+        let g_neptuno = 11.15;
+        let g_pluton = 0.62;
+
+
+        switch(astro){
+            case 1:
+                // masa en Mercurio
+                masa_en_mercurio = (g_mercurio * masa) / g_tierra;
+                masa_en_mercurio = parseFloat(masa_en_mercurio).toFixed(3);
+                break;
+            case 2:
+                // masa en Venus
+                masa_en_venus = (g_venus * masa) / g_tierra;
+                masa_en_venus = parseFloat(masa_en_venus).toFixed(3);
+                break;
+            case 3:
+                // masa en la Luna
+                masa_en_luna = (g_luna * masa) / g_tierra;
+                masa_en_luna = parseFloat(masa_en_luna).toFixed(3);
+                break;
+            case 4:
+                // masa en la Tierra
+                masa_en_tierra = g_tierra * masa;
+                masa_en_tierra = parseFloat(masa_en_tierra).toFixed(3);
+                break;
+            case 5:
+                // masa en Marte
+                masa_en_marte = (g_marte * masa) / g_tierra;
+                masa_en_marte = parseFloat(masa_en_marte).toFixed(3);
+                break;
+            case 6:
+                // masa en Jupiter
+                masa_en_jupiter = (g_jupiter * masa) / g_tierra;
+                masa_en_jupiter = parseFloat(masa_en_jupiter).toFixed(3);
+                break;
+            case 7:
+                // masa en Saturno
+                masa_en_saturno = (g_saturno * masa) / g_tierra;
+                masa_en_saturno = parseFloat(masa_en_saturno).toFixed(3);
+                break;
+            case 8:
+                // masa en Urano
+                masa_en_urano = (g_urano * masa) / g_tierra;
+                masa_en_urano = parseFloat(masa_en_urano).toFixed(3);
+                
+                break;
+            case 9:
+                // masa en Neptuno
+                masa_en_neptuno = (g_neptuno * masa) / g_tierra;
+                masa_en_neptuno = parseFloat(masa_en_neptuno).toFixed(3);
+                
+                break;
+            case 10:
+                // masa en Pluton
+                masa_en_pluton = (g_pluton * masa) / g_tierra;
+                masa_en_pluton = parseFloat(masa_en_pluton).toFixed(3);
+                break;
+            default:
+                document.write("No existe tal astro en la lista.");
+        }
+
+        document.write("tu masa en Mercurio es " + masa_en_mercurio + " Kg<br>" +
+        "tu masa en Venus es " + masa_en_venus + " Kg<br>" +
+        "tu masa en Marte es " + masa_en_marte + " Kg<br>" +
+        "tu masa en Jupiter es " + masa_en_jupiter + " Kg<br>" +
+        "tu masa en Saturno es " + masa_en_saturno + " Kg<br>" +
+        "tu masa en Urano es " + masa_en_urano + " Kg<br>" +
+        "tu masa en Neptuno es " + masa_en_neptuno + " Kg<br>" +
+        "tu masa en Plutón es " + masa_en_pluton + " Kg<br>");
+        // ensayo y error
+    </script>
+  </body>
+</html>
