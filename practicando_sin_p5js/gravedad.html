@@ -37,7 +37,7 @@
       peso_en_jupiter = parseInt(peso_en_jupiter);
       // peso en Mercurio
       peso_en_mercurio = g_mercurio * peso / g_tierra
-      peso_en_mercurio = parseInt(peso_en_mercurio);
+      peso_en_mercurio = parseFloat(peso_en_mercurio).toFixed(3);
       // peso en Venus
       peso_en_venus = g_venus * peso / g_tierra
       peso_en_venus = parseInt(peso_en_venus);
@@ -56,7 +56,7 @@
       // peso en Pluton
       peso_en_pluton = g_pluton * peso / g_tierra
       peso_en_pluton = parseInt(peso_en_pluton);
-      document.write("tu peso en jupiter es " + peso_en_jupiter + "\n");
+      document.write("tu peso en jupiter es " + peso_en_jupiter + "<br>");
       document.write("tu peso en mercurio es " + peso_en_mercurio);
       // ensayo y error
     </script>
