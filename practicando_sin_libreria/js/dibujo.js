@@ -1,32 +1,17 @@
 window.onload = function() {
-    var canvas = document.getElementById("dibujito");
-    var lienzo = canvas.getContext("2d");
-    var i;
-    var j;
-    var xi,yi,xf,yf;
+    let canvas = document.getElementById("dibujito");
+    let lienzo = canvas.getContext("2d");
 
-    function dibujarLinea(color,x_i,y_i,x_f,y_f){
+    // Función para dibujar una línea en el canvas 
+    function dibujarLinea(color, xInicial, yInicial, xFinal, yFinal)
+    {
         lienzo.beginPath();
         lienzo.strokeStyle = color;
-        lienzo.moveTo(x_i,y_i);
-        lienzo.lineTo(x_f,y_f);
+        lienzo.moveTo(xInicial, yInicial);
+        lienzo.lineTo(xFinal, yFinal);
         lienzo.stroke();
-        lienzo.beginPath();
+        lienzo.closePath();
     }
-    
-    for (i = 1; i <= 300; i = i + 3) { 
-        j = i %2;
-        if (j == 0) {
-            xi = i;
-            yi = 1;
-            xf = 150;
-            yf = i;
-        } else {
-            xi = i;
-            yi = 150;
-            xf = 1;
-            yf = i;
-        }
-        dibujarLinea("#6FF5FF",xi,yi,xf,yf);
-    }
+
+    dibujarLinea("red", 0, 0, 150, 150);
 }
