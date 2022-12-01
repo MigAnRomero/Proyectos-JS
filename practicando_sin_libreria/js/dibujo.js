@@ -34,6 +34,16 @@ window.onload = function() {
         console.log("Línea nro: " + ele);
     }
 
+    for (ele = 0; ele < lineas; ele++)
+    {
+        xI = (10 * ele);
+        yF = 10 * (ele + 1);
+        dibujarLinea(colorLinea, xI, 0, 300, yF);
+        console.log("Línea dos nro: " + ele);
+    }
+
     dibujarLinea("pink", 1, 1, 1, 299);  //Dibujar línea vertical en eje Y
     dibujarLinea("pink", 1, 299, 299, 299);  //Dibujar línea vertical en eje X
+    dibujarLinea("pink", 1, 1, 299, 1);
+    dibujarLinea("pink", 299, 1, 299, 299);
 }
