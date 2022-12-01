@@ -24,4 +24,7 @@ window.onload = function() {
         console.log("Línea nro: " + ele);
         ele += 1;
     }
+
+    dibujarLinea("pink", 1, 1, 1, 299);  //Dibujar línea vertical en eje Y
+    dibujarLinea("pink", 1, 299, 299, 299);  //Dibujar línea vertical en eje X
 }
