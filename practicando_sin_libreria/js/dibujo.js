@@ -18,6 +18,7 @@ window.onload = function() {
     while (ele < lineas) 
     {
         dibujarLinea("#AAF", 0, 0, 10, 300);
+        console.log("Línea nro: " + ele);
         ele += 1;
     }
 }
