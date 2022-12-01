@@ -1,6 +1,8 @@
 window.onload = function() {
     let canvas = document.getElementById("dibujito");
     let lienzo = canvas.getContext("2d");
+    let lineas = 30;  // Límite de líneas creadas
+    let ele = 0;
 
     // Función para dibujar una línea en el canvas 
     function dibujarLinea(color, xInicial, yInicial, xFinal, yFinal)
@@ -13,10 +15,9 @@ window.onload = function() {
         lienzo.closePath();
     }
 
-    dibujarLinea("red", 0, 0, 150, 150);
-    dibujarLinea("yellow", 0, 4, 146, 150);
-    dibujarLinea("red", 150, 150, 200, 75);
-    dibujarLinea("yellow", 146, 150, 190, 75);
-    dibujarLinea("red", 200, 75, 0, 0); // Se cierra el triangulo rojo
-    dibujarLinea("yellow", 190, 75, 0, 4); // Se cierra el triangulo amarillo
+    while (ele < lineas) 
+    {
+        dibujarLinea("#AAF", 0, 0, 10, 300);
+        ele += 1;
+    }
 }
