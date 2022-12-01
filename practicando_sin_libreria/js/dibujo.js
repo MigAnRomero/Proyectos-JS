@@ -3,6 +3,7 @@ window.onload = function() {
     let lienzo = canvas.getContext("2d");
     let lineas = 30;  // Límite de líneas creadas
     let ele = 0;
+    let xI, yI, xF, yF;
 
     // Función para dibujar una línea en el canvas 
     function dibujarLinea(color, xInicial, yInicial, xFinal, yFinal)
@@ -17,7 +18,9 @@ window.onload = function() {
 
     while (ele < lineas) 
     {
-        dibujarLinea("#AAF", 0, 0, 10, 300);
+        yI = (10 * ele);
+        xF = 10 * (ele + 1);
+        dibujarLinea("#AAF", 0, yI, xF, 300);
         console.log("Línea nro: " + ele);
         ele += 1;
     }
