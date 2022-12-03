@@ -1,4 +1,9 @@
 window.onload = function() {
+    // Código para el input
+    let texto = document.getElementById("textoLineas");
+    let boton = document.getElementById("botonUno");
+    boton.addEventListener("click", dibujoPorClick);
+    // Código para dibujar líneas
     let canvas = document.getElementById("dibujito");
     let lienzo = canvas.getContext("2d");
     let lineas = 30;  // Límite de líneas creadas
@@ -15,6 +20,11 @@ window.onload = function() {
         lienzo.lineTo(xFinal, yFinal);
         lienzo.stroke();
         lienzo.closePath();
+    }
+    // Función para cuando un btn es oprimido
+    function dibujoPorClick()
+    {
+        alert("Btn oprimido");
     }
 
     // while (ele < lineas) 
